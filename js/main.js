@@ -777,7 +777,7 @@ function changeTheme(theme)
 	ctx.save();
 	ctx.clearRect(0, 0, WIDTH, HEIGHT);
 	ctx.font = '20px sans-serif';
-	ctx.fillText(IMAGE_LOADED + '/' + count + ' loaded, please wait...',100,HEIGHT/2);
+	ctx.fillText(IMAGE_LOADED + '/' + count + ' 로딩중...',100,HEIGHT/2);
 	ctx.restore();
 
 	CURSOR_IMAGE.onload = GAMEOVER_IMAGE.onload = PAUSE_IMAGE.onload=TITLE_IMAGE.onload=BACKGROUND_IMAGE.onload=SOURCE_IMAGE.onload=BOTTOM_IMAGE.onload=HEAD_IMAGE.onload=BULLET_IMAGE.onload=DOODLE_IMAGE.l.onload=DOODLE_IMAGE.ls.onload=DOODLE_IMAGE.u.onload=DOODLE_IMAGE.us.onload=DOODLE_IMAGE.r.onload=DOODLE_IMAGE.rs.onload=function(){
