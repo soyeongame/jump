@@ -8,6 +8,21 @@ var HEIGHT = SCREEN_HEIGHT;
 $('body').prepend('<canvas id="canv" tabindex="0" style="position:absolute;left:'+(SCREEN_WIDTH-WIDTH)/2+'px;top:0px;" width='+WIDTH+'px height='+HEIGHT+'px>请换个浏览器。。</canvas>');
 var ctx=$('#canv')[0].getContext('2d');
 
+document.documentElement.addEventListener('touchstart', function (event) {
+     if (event.touches.length > 1) {
+          event.preventDefault(); 
+        } 
+    }, false);
+
+var lastTouchEnd = 0; 
+
+document.documentElement.addEventListener('touchend', function (event) {
+     var now = (new Date()).getTime();
+     if (now - lastTouchEnd <= 300) {
+          event.preventDefault(); 
+        } lastTouchEnd = now; 
+    }, false);
+
 /*数学计算函数*/
 var cos=Math.cos, sin=Math.sin, random=Math.random, PI=Math.PI, abs=Math.abs, atan2=Math.atan2, round=Math.round, floor=Math.floor, sqrt=Math.sqrt;
 	
@@ -967,17 +982,3 @@ function pause() {
 init(true);
 addEvent();
 
-document.documentElement.addEventListener('touchstart', function (event) {
-     if (event.touches.length > 1) {
-          event.preventDefault(); 
-        } 
-    }, false);
-
-var lastTouchEnd = 0; 
-
-document.documentElement.addEventListener('touchend', function (event) {
-     var now = (new Date()).getTime();
-     if (now - lastTouchEnd <= 300) {
-          event.preventDefault(); 
-        } lastTouchEnd = now; 
-    }, false);
