@@ -93,6 +93,76 @@
         a {
             text-decoration: none
         }
+        li, ul, ol {
+            list-style-type: none;
+            padding: 0;
+            margin: 0
+        }
+
+        .hide {
+            display: none
+        }
+
+        .clear {
+            clear: both
+        }
+
+        .loading {
+            background-color: #ffd796;
+            height: 100%;
+            width: 100%;
+        }
+
+        .loading .main {
+            width: 60%;
+            margin: 0 auto;
+            color: #FFF
+        }
+
+        .loading .main img {
+            width: 60%;
+            margin: 1rem auto 0
+        }
+
+        .loading .main .title {
+            font-size: .3rem
+        }
+
+        .loading .main .text {
+            font-size: .15rem
+        }
+
+        .loading .main .bar {
+            height: .12rem;
+            width: 100%;
+            border: 3px solid #FFF;
+            border-radius: .6rem;
+            margin: .1rem 0;
+        }
+
+        .loading .main .bar .sub {
+            height: .1rem;
+            width: 98%;
+            margin: .008rem auto 0;
+        }
+
+        .loading .main .bar .percent {
+            height: 100%;
+            width: 0;
+            background-color: #FFF;
+            border-radius: .6rem;
+        }
+
+        .loading .logo {
+            position: absolute;
+            bottom: .3rem;
+            left: 0;
+            right: 0
+        }
+
+        .loading .logo img {
+            width: 1rem
+        }
 
 	</style>
 </head>
