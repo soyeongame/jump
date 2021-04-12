@@ -785,7 +785,7 @@ function changeTheme(theme)
 		ctx.save();
 		ctx.clearRect(0, 0, WIDTH, HEIGHT);
 		ctx.font = '20px sans-serif';
-		ctx.fillText(IMAGE_LOADED + '/' + count + ' loaded, please wait...',100,HEIGHT/2);
+		ctx.fillText(IMAGE_LOADED + '/' + count + '로딩중...',100,HEIGHT/2);
 		ctx.restore();
 
 		if (IMAGE_LOADED == count)
