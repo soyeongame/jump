@@ -93,7 +93,7 @@ var DEATH_CLOCK;
 var THEMES = ['lik','bunny','doodlestein','ghost','ice','jungle','ninja','snow','soccer','space','underwater'];
 										//各个主题的文件夹名
 var PLATFORM_TYPE = ['std','movex','movey','burn','hide','break'];
-var SOUND_NAME = ['jump','lomise','explodingplatform','explodingplatform2','pucanje','pucanje2','pada'];
+var SOUND_NAME = ['jump','lomise','explodingplatform','explodingplatform2','pucanje','pucanje2','pada','spring'];
 var Key = {
 	l: false,
 	r: false,
@@ -572,6 +572,7 @@ function hitPlatform(id)
 				doodleReflect(yi, PLATFORM[p].spring);
 				if (PLATFORM[p].spring) {
 					PLATFORM[p].spring = 2;
+				playSound('spring');
 				}
 				playSound('jump');
 				if (t == 'hide')
