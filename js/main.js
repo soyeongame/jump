@@ -173,7 +173,7 @@ function init(changetheme, theme)
 function drawBackground()
 {
 	ctx.drawImage(BACKGROUND_IMAGE, 0, 0, WIDTH, HEIGHT);
-	ctx.drawImage(TITLE_IMAGE, WIDTH/2-TITLE_IMAGE.width/2*SIZE,TITLE_Y+HEIGHT/3-TITLE_IMAGE.height/2*SIZE,448*SIZE*0.8,294*SIZE*0.8);
+	ctx.drawImage(TITLE_IMAGE, WIDTH/2-TITLE_IMAGE.width/2*SIZE,TITLE_Y+HEIGHT/3-TITLE_IMAGE.height/2*SIZE,500*SIZE*0.8,294*SIZE*0.8);
 }
 
 function drawCursor() {
