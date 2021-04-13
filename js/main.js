@@ -1,5 +1,3 @@
-// 这写的都是啥=。=
-
 /*初始化canvas，标准尺寸:640*1024 = 5:8，放在屏幕中间，上下填充满*/
 var SCREEN_WIDTH=document.documentElement.clientWidth;//屏幕宽度高度
 var SCREEN_HEIGHT=document.documentElement.clientHeight;
@@ -175,7 +173,7 @@ function init(changetheme, theme)
 function drawBackground()
 {
 	ctx.drawImage(BACKGROUND_IMAGE, 0, 0, WIDTH, HEIGHT);
-	ctx.drawImage(TITLE_IMAGE, WIDTH/2-TITLE_IMAGE.width/2*SIZE,TITLE_Y+HEIGHT/3-TITLE_IMAGE.height/2*SIZE,412*SIZE*0.8,100*SIZE*0.8);
+	ctx.drawImage(TITLE_IMAGE, WIDTH/2-TITLE_IMAGE.width/2*SIZE,TITLE_Y+HEIGHT/3-TITLE_IMAGE.height/2*SIZE,448*SIZE*0.8,294*SIZE*0.8);
 }
 
 function drawCursor() {
@@ -792,6 +790,8 @@ function changeTheme(theme)
 			runNewGame();
 	}
 }
+
+
 
 function loadSound()
 {
